@@ -67,7 +67,6 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5px;
   gap: 40px;
 }
 
@@ -146,6 +145,7 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   max-width: 196px;
+  gap: 6px;
 }
 
 .search-form__fieldset-title {
@@ -311,19 +311,11 @@ ol {
   text-decoration: underline;
 }
 
-.search-form__textfield:focus-visible {
-  outline: 1px solid #fff;
+.search-form__textfield:focus {
+  outline: none;
 }
 
-.search-form__label:focus-visible {
-  outline: 1px solid #fff;
-}
-
-.button:focus-visible {
-  outline: 1px solid #fff;
-}
-
-.content__card-link:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 
